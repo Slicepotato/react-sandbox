@@ -18,5 +18,11 @@ module.exports = {
         loaders: ["babel-loader"]
       }
     ]
-  }
+  },				
+  entry: {
+    javascript: "./js/app.js",
+    html: "./index.html",
+  },
+  test: /\.html$/,
+  loader: "file?name=[name].[ext]",
 };
